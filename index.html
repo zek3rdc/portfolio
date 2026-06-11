@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de José Pérez — Desarrollador Full Stack con experiencia en ETL, Snowflake, y soluciones web modernas." />
+  <meta property="og:title" content="José Pérez | Full Stack Developer" />
+  <meta property="og:description" content="Desarrollador de software con 3 años de experiencia en soluciones full-stack, ETL y ciencia de datos." />
+  <meta property="og:type" content="website" />
+  <title>José Pérez | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="noise-overlay"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JP<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" id="nav-about">Sobre mí</a></li>
+        <li><a href="#experience" id="nav-experience">Experiencia</a></li>
+        <li><a href="#projects" id="nav-projects">Proyectos</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#education" id="nav-education">Educación</a></li>
+        <li><a href="#contact" id="nav-contact">Contacto</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <a href="#about">Sobre mí</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Educación</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para nuevas oportunidades
+      </div>
+      <h1 class="hero-name">José<br /><span class="gradient-text">Pérez</span></h1>
+      <p class="hero-title">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-sub">
+        Desarrollador de software con <strong>3 años de experiencia</strong> construyendo soluciones escalables, ETL y plataformas analíticas.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Contáctame</a>
+        <a href="#experience" class="btn btn-ghost">Ver trabajo</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/zek3rdc" target="_blank" rel="noopener" id="link-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-a-perez-d-a7ab64249" target="_blank" rel="noopener" id="link-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:jose.4nt.perez@gmail.com" id="link-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar-ring ring-2"></div>
+      <img src="avatar.png" alt="José Pérez" class="hero-avatar" id="hero-avatar" />
+      <div class="avatar-glow"></div>
+    </div>
+    <a href="#about" class="scroll-hint" id="scroll-hint" aria-label="Scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — Sobre mí</div>
+      <h2 class="section-title">Quién soy</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Soy un <strong>desarrollador de software</strong> con 3 años de experiencia diseñando, desarrollando y optimizando soluciones tecnológicas orientadas a resultados.</p>
+          <p>Mi experiencia abarca el desarrollo de aplicaciones <strong>full-stack</strong>, la integración de sistemas y la construcción de procesos <strong>ETL</strong>, así como el trabajo con ciencia de datos y plataformas analíticas como <strong>Snowflake</strong>.</p>
+          <p>He trabajado bajo <strong>metodologías ágiles (Scrum)</strong>, colaborando en equipos multidisciplinarios. Me enfoco en construir soluciones escalables, eficientes y mantenibles.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card" id="stat-years">
+            <div class="stat-number"><span class="count" data-target="3">0</span>+</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat-card" id="stat-projects">
+            <div class="stat-number"><span class="count" data-target="20">0</span>+</div>
+            <div class="stat-label">Proyectos completados</div>
+          </div>
+          <div class="stat-card" id="stat-badges">
+            <div class="stat-number"><span class="count" data-target="5">0</span>+</div>
+            <div class="stat-label">Badges Snowflake</div>
+          </div>
+          <div class="stat-card" id="stat-tech">
+            <div class="stat-number"><span class="count" data-target="25">0</span>+</div>
+            <div class="stat-label">Tecnologías</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">02 — Experiencia</div>
+      <h2 class="section-title">Trayectoria profesional</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" id="exp-lightsoftware">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Programador Full Stack</h3>
+                <p class="timeline-company">LightSoftware</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Ago 2025 – Presente</span>
+                <span class="badge-tag current">Actual</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Desarrollo de soluciones full-stack alineadas a objetivos de negocio y métricas de rendimiento.</li>
+              <li>Implementación de interfaces web modernas, responsivas y mantenibles.</li>
+              <li>Desarrollo de servicios backend y procesos optimizados para alto rendimiento.</li>
+              <li>Integración y documentación mediante especificaciones <strong>OpenAPI (Swagger)</strong>.</li>
+              <li>Participación activa en definición técnica y mejora continua de sistemas.</li>
+            </ul>
+            <p class="timeline-ref">Ref: José Cacciopo · +58 412-5761668</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-bimodal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Programador Junior</h3>
+                <p class="timeline-company">Bimodal Technology</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Sep 2024 – Ene 2025</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Desarrollo de soluciones orientadas a datos y automatización de procesos.</li>
+              <li>Implementación y optimización de procesos ETL y análisis de información.</li>
+              <li>Trabajo con bases de datos relacionales y fundamentos de programación de sistemas.</li>
+              <li>Aplicación de buenas prácticas y trabajo colaborativo bajo metodologías ágiles.</li>
+            </ul>
+            <p class="timeline-ref">Ref: Abel Laguna · +58 414-3079944</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">03 — Proyectos</div>
+      <h2 class="section-title">Proyectos destacados</h2>
+      <div class="projects-grid">
+
+        <div class="project-card" id="project-cargat">
+          <div class="project-img-wrap">
+            <img src="images/reference1.png" alt="Cargat Platform" class="project-img" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag-cat">Backend &amp; IoT</span>
+            <h3 class="project-title">Cargat</h3>
+            <p class="project-desc">
+              Diseño y desarrollo de arquitectura de comunicación de alto rendimiento entre servidor y dispositivos utilizando herramientas IoT.
+            </p>
+            <div class="project-tags">
+              <span class="p-tag">Node.js</span>
+              <span class="p-tag">IoT</span>
+              <span class="p-tag">Mosquitto</span>
+              <span class="p-tag">MQTT</span>
+              <span class="p-tag">API REST</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.cargat.com" target="_blank" rel="noopener" class="project-btn">
+                Visitar sitio Web
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-contave">
+          <div class="project-img-wrap placeholder-bg">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="placeholder-text">Contave POS</div>
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag-cat">Software POS &amp; Gestión</span>
+            <h3 class="project-title">Contave</h3>
+            <p class="project-desc">
+              Software de punto de venta (POS) y gestión de inventario adaptado para tiendas, restaurantes y comercios, optimizando ventas, stock y facturación.
+            </p>
+            <div class="project-tags">
+              <span class="p-tag">PHP</span>
+              <span class="p-tag">Laravel</span>
+              <span class="p-tag">MySQL</span>
+              <span class="p-tag">POS</span>
+              <span class="p-tag">Gestión</span>
+            </div>
+            <div class="project-links">
+              <span class="project-status-badge">En homologación / Interno</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-bcv">
+          <div class="project-img-wrap">
+            <img src="images/reference2.png" alt="Calculadora BCV" class="project-img" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-content">
+            <span class="project-tag-cat">App Móvil &amp; IA</span>
+            <h3 class="project-title">Calculadora BCV &amp; Asistente IA</h3>
+            <p class="project-desc">
+              Aplicación móvil para cálculo y consulta de tasas de cambio oficiales (BCV) y paralelas en Venezuela, equipada con un asistente conversacional IA integrado.
+            </p>
+            <div class="project-tags">
+              <span class="p-tag">Flutter</span>
+              <span class="p-tag">Dart</span>
+              <span class="p-tag">AI Assistant</span>
+              <span class="p-tag">API Integration</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zek3rdc/Calculator_Bcv_APK" target="_blank" rel="noopener" class="project-btn">
+                Ver Repositorio
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">04 — Habilidades</div>
+      <h2 class="section-title">Stack técnico</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group" id="skill-frontend">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Angular</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-backend">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">OpenAPI / Swagger</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-desktop">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="12" rx="2"/><path d="M3 9h18M9 21h6M12 15v6"/></svg>
+          </div>
+          <h3>Desktop &amp; Mobile</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Wails.js</span>
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Apps Multiplataforma</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-iot">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+          </div>
+          <h3>IoT &amp; Mensajería</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">IoT</span>
+            <span class="skill-tag">MQTT</span>
+            <span class="skill-tag">Mosquitto</span>
+            <span class="skill-tag">Protocolos de red</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-data">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Datos &amp; Analytics</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ETL</span>
+            <span class="skill-tag">Snowflake</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Ciencia de Datos</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-servers">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3>Servidores &amp; Deploy</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Apache Tomcat</span>
+            <span class="skill-tag">Node Server</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="skill-group" id="skill-devops">
+          <div class="skill-group-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>DevOps &amp; Metodologías</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Scrum</span>
+            <span class="skill-tag">DevOps</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Entornos Ágiles</span>
+          </div>
+        </div>
+
+        <div class="skill-group snowflake-card" id="skill-snowflake">
+          <div class="skill-group-icon snowflake-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 7l-5-5-5 5"/><path d="M17 17l-5 5-5-5"/><path d="M2 12h20"/><path d="M7 7l-5 5 5 5"/><path d="M17 7l5 5-5 5"/></svg>
+          </div>
+          <h3>Snowflake Badges</h3>
+          <div class="skill-tags">
+            <span class="skill-tag accent">Data Warehousing</span>
+            <span class="skill-tag accent">Analytics</span>
+            <span class="skill-tag accent">Data Engineering</span>
+            <span class="skill-tag accent">Certificado</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-label">05 — Formación</div>
+      <h2 class="section-title">Educación</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card" id="edu-tsu">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>TSU en Informática</h3>
+            <p class="edu-inst">Instituto Universitario Antonio José de Sucre</p>
+            <span class="edu-date">Enero 2026</span>
+            <ul class="edu-list">
+              <li>Miembro destacado del área de Desarrollo</li>
+              <li>Formación continua en Python y tecnologías de datos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="edu-card" id="edu-tech">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="edu-info">
+            <h3>Técnico en Reparación de Computadoras</h3>
+            <p class="edu-inst">ITCI Instituto Tecnológico</p>
+            <span class="edu-date">Sep 2023</span>
+            <ul class="edu-list">
+              <li>Formación en mantenimiento, diagnóstico y optimización de hardware y software</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contacto</div>
+      <h2 class="section-title">Hablemos</h2>
+      <p class="contact-sub">Estoy abierto a nuevas oportunidades, colaboraciones y proyectos desafiantes.</p>
+      <div class="contact-grid">
+        <a href="mailto:jose.4nt.perez@gmail.com" class="contact-card" id="contact-email">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">jose.4nt.perez@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://github.com/zek3rdc" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/zek3rdc</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-a-perez-d-a7ab64249" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">José Pérez</p>
+          </div>
+        </a>
+        <div class="contact-card" id="contact-phone">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.95 6.95l1.51-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Teléfono</p>
+            <p class="contact-value">+58 412-5667071</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <p>Diseñado & construido por <strong>José Pérez</strong></p>
+      <p class="footer-sub">Caracas, Venezuela · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
